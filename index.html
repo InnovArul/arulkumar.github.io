@@ -1,71 +1,129 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <title>Arulkumar's resume</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" id="topmenu">
+    <div>
+        <nav class="navbar navbar-inverse navigation-clean navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header page-scroll"><a href="#" class="navbar-brand navbar-link page-scroll">Resume </a>
+            <button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        </div>
+        <div class="collapse navbar-collapse" id="navcol-1"> 
+            <ul class="nav navbar-nav navbar-right">
+                <li role="presentation"><a class="page-scroll" href="#publications"> Publications</a></li>
+                <li role="presentation"><a class="page-scroll" href="#experience">Work Experience</a></li>
+                <li role="presentation"><a class="page-scroll"       href="#education">Education </a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    </div>
+    <div>
         <div class="container">
-            <div class="navbar-header">
-                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                
-                <a href="#" class="navbar-brand">Resume</a>
-            </div><!-- navbar-header -->
-            
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#work">Work Experience</a></li>
-                    <li><a href="#publications">Publications</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+            <div class="jumbotron" style="padding-top:5px;padding-bottom:10px;text-align:center;">
+                <h3>Arulkumar Subramaniam</h3>
+                <p style="padding-bottom:15px;">"The secret of success is this: there is no secret to success"</p>
             </div>
-        </div><!-- container -->
-    </nav><!-- navbar -->
-    
-    <!-- jumbotron -->
-    <div class="jumbotron">
-        <div class="container text-center">
+        </div>
+    </div>
+    <div>
+        <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <h2>Arulkumar Subramaniam</h2>
-                    <h4>"A mediocre idea that generates enthusiasm will go farther than a great idea that inspires no one."</h4>
-                </div>
+                <div class="col-md-8"></div>
+                <div class="col-md-4 text-center">
+        <div>
+            <img class="center-block img-responsive" id="profileimg" style="width:200px;height:200px;text-align:center;" src="assets/img/profile.jpg"></img>
+       </div>
+       <div class="recentnews text-left">
+           <h4>Recent updates </h4>
+           <div class="newsitem"><p>08-16 October, 2016 : Attended ECCV to present a paper on "Apparent Personality Analysis" workshop</p></div>
+           <div class="newsitem"><p>14 July, 2015 : Joined as a Research scholar in IIT Madras (Computer Vision Lab)</p></div>
+        </div>        
+    </div>
+
+</div>
             </div>
-           
         </div>
     </div>
-    
-    <!-- firstrow -->
+    <div>
+        <div class="container">
+            <div class="row">
+                <div id="publications" class="col-md-12">
+    <h3>Publications </h3>
+    <div>
+        <h4>Conferences </h4>
+    <div>
+    <span>16 August, 2016: <b>"Deep Neural Networks with Inxact matching for Person Re-Identification"</b> accepted in <i>NIPS-2016</i> [<a href="#">pdf</a>][<a href="#">code</a>]
+        <p><b>Authors:</b> Arulkumar Subramaniam, Moitreya Chatterjee, Anurag Mittal</p></span>    
+    </div>
+    <div>
+    <span>12 August, 2016: <b>"Bi-modal First Impressions Recognition using Temporally Ordered Deep Audio and StochasticVisual Features"</b> accepted in <i>ECCV-2016
+        workshop on Apparent Personality Analysis.</i> [<a href="https://arxiv.org/pdf/1610.10048v1.pdf" target="_blank">pdf</a>][<a href="https://github.com/InnovArul/first-impressions" target="_blank">code</a>]
+        <p><b>Authors:</b> Arulkumar Subramaniam, Vismay Patel, Ashish Mishra, Prashanth Balasubramanian, Anurag Mittal</p></span>
+    </div>
+    </div>
+
+</div>
+            </div>
+        </div>
+        <div class="container" id="experience">
+    <h3>Work Experience</h3>
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-3">
+            <span>May-2010 to July-2015</span>
+        </div>
+        <div class="col-md-9">
+            <p>Senior Software Engineer in "Robert Bosch Engineering and Business Solutions Ltd (RBEI)"</p>
+            <p>Automotive Domain (Passive safety: Airbags), Driver development (VC++, Perl, C#.Net) for ECU diagnosis (CAN, Flexray protocols), crash emulation and evaluation of Airbags ECU based on requirements, Rapid prototyping with Agile methodology</p>
+        </div>        
         
-        </div>
-        <div class="col-md-4">
-              <img src="imgs/profile.jpg" style="width:200px;height:200px;">
-        </div>
     </div>
-    
+</div>
+    </div>
+    <div>
+        <div class="container" id="education">
+    <h3>Education</h3>
     <div class="row">
-        <div class="col-md-12" style="text-align:center;">
-        <span ></span>
-        </div>    
+        <div class="col-md-3">
+            <span>August-2016 to *current*</span>
+        </div>
+        <div class="col-md-9">
+            <p>M.S (Machine Learning and Computer Vision) from IIT Madras</p>
+            <p> Research advisor: Prof.Dr.Anurag Mittal</p>
+        </div>        
     </div>
-
-<!-- javascript -->
-    <script src="js/jquery3.1.1.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    
+    <div class="row">
+        <div class="col-md-3">
+            <span>August-2006 to April-2010</span>
+        </div>
+        <div class="col-md-9">
+            <p>B.E (Computer Science and Engineering) from Coimbatore Institute of Technology</p>
+            <p> Thesis: Trickle algorithm for Wireless Sensor Networks
+        </div>        
+    </div>
+</div>
+    </div>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="article-dual-column"></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
 </body>
-</html>
 
+</html>
