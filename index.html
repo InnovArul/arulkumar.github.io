@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 
@@ -26,7 +27,7 @@
                 <li role="presentation"><a class="page-scroll" href="#publications"> Publications</a></li>
                 <li role="presentation"><a class="page-scroll" href="#experience">Work Experience</a></li>
                 <li role="presentation"><a class="page-scroll" href="#education">Education </a></li>
-                <li role="presentation"><a class="page-scroll" href="#contact">Contact </a></li>
+                <li role="presentation"><a class="page-scroll" href="#contactform">Contact </a></li>
             </ul>
         </div>
     </div>
@@ -40,7 +41,7 @@
             </div>
         </div>
     </div>
-    <div>
+    <div style="padding-bottom:50px;">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
@@ -68,9 +69,15 @@
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
-        <div>
+        <div style="padding-bottom:20px;">
             <img class="center-block img-responsive" id="profileimg" style="width:200px;height:200px;text-align:center;" src="assets/img/profile.jpg"></img>
        </div>
+        <div class="social-icons">
+            <a href="https://github.com/InnovArul" target="_blank"><i class="icon ion-social-github"></i></a>
+            <a href="https://in.linkedin.com/in/arulcse" target="_blank"><i class="icon ion-social-linkedin"></i></a>
+            <a href="https://www.facebook.com/subramaniam.arulkumar" target="_blank"><i class="icon ion-social-facebook"></i></a>
+            <a href="https://ripplescribblings.wordpress.com/" target="_blank"><i class="icon ion-social-wordpress"></i></a>
+        </div>
        <div class="recentnews text-left">
            <h4>Recent updates </h4>
            <div class="newsitem"><p>08-16 October, 2016 : Attended ECCV to present a paper on "Apparent Personality Analysis" workshop</p></div>
@@ -82,10 +89,34 @@
             </div>
         </div>
     </div>
-    <div>
+    <div class="article-list" style="padding-bottom:50px;">
         <div class="container">
-            <div class="row">
-                <div id="publications" class="col-md-12">
+            <div class="intro">
+                <h3 id="interests" class="text-left">Research Interests</h3>
+            </div>
+            <div class="row articles">
+                <div class="col-md-4 col-sm-4 item"><img class="img-responsive" src="assets/img/campair1_id478_7.png">
+                    <h3 class="name">Person Detection, Tracking &amp; Re-Identification</h3>
+                    <p class="description">In the field of Computer Vision, my interest mainly revolves around detecting, tracking and re-identifying humans (as in surveillance). </p>
+                </div>
+                <div class="col-md-4 col-sm-4 item"><img class="img-responsive" src="assets/img/highjump.png">
+                    <h3 class="name">Action Recogniton, Detection &amp; Summarization</h3>
+                    <p class="description">Recognizing actions of Humans is a challenging task and it is the need of the hour due to recent outburst of videos in social medias such as Youtube, Facebook etc., </p>
+                </div>
+                <div class="col-md-4 col-sm-4 item"><img class="img-responsive" src="assets/img/multimodal_learning.jpg">
+                    <h3 class="name">Multimodal Learning (Image, NLP, Audio)</h3>
+                    <p class="description">It is particularly interesting for me to understand, how we, as humans, are using Multimodal knowledge from the world and in the same way, will we be able to make a machine to learn using multimodal data?</p>
+                </div>
+                <!-- div class="col-md-3 col-sm-6 item"><img src="loft.jpg" class="img-responsive" />
+    <h3 class="name">Robotics and Reinforcement Learning</h3>
+    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
+</div -->
+            </div>
+        </div>
+    </div>
+    <div class="container" style="padding-bottom:50px;">
+        <div class="row">
+            <div id="publications" class="col-md-12">
     <h3>Publications </h3>
     <div>
         <h4>Conferences </h4>
@@ -101,9 +132,9 @@
     </div>
 
 </div>
-            </div>
         </div>
-        <div class="container" id="experience">
+    </div>
+    <div class="container" id="experience" style="padding-bottom:50px;">
     <h3>Work Experience</h3>
     <div class="row">
         <div class="col-md-3">
@@ -116,9 +147,8 @@
         
     </div>
 </div>
-    </div>
     <div>
-        <div class="container" id="education">
+        <div class="container" id="education" style="padding-bottom:50px;">
     <h3>Education</h3>
     <div class="row">
         <div class="col-md-3">
@@ -140,14 +170,26 @@
     </div>
 </div>
     </div>
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="clearfix"></div>
-            </div>
+    <div class="container contact-clean" id="contactform">
+    <h3>Contact </h3>
+    <form method="post">
+        <div class="form-group has-feedback">
+            <input type="text" id="name" name="name" placeholder="Name" class="form-control" required/><i aria-hidden="true" class="form-control-feedback glyphicon"></i>
         </div>
-    </div>
-    <div class="article-dual-column"></div>
+            
+        <div class="form-group has-feedback">
+            <input type="email" id="email" name="email" placeholder="Email" class="form-control" required/><i aria-hidden="true" class="form-control-feedback glyphicon"></i>
+        </div>
+        <div class="form-group">
+            <textarea rows="14" id="message" name="message" placeholder="Message" class="form-control" required></textarea>
+        </div>
+        <div class="form-group">
+            <button id="form-submit" class="btn btn-primary" type="submit">send </button>
+            <div id="msgsubmit" class="h3 text-center hidden">Message Submitted!</div>
+        </div>
+    </form>
+</div>
+    <link rel="icon" type="image/ico" href="assets/img/favicon.ico" />
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/script.min.js"></script>
