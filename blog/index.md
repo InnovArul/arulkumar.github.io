@@ -1,6 +1,6 @@
 <!-- # Blog index -->
-| Domains     | 
-| ----------- | 
-| [Stereo depth estimation](./stereodepth) |
+Domains     
+----------- 
+[Stereo depth estimation](./stereodepth) 
 
 
